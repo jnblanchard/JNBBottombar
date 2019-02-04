@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'JNBBottombar'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of JNBBottombar.'
+  s.summary          = 'Customizable bottom bar controller.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+If you have bottom content that you would like to show and hide off screen. This controller makes it really easy to show anything as bottom information. It is a great way to show some interaction in your app.
                        DESC
 
-  s.homepage         = 'https://github.com/jnblanchard@mac.com/JNBBottombar'
+  s.homepage         = 'https://github.com/jnblanchard/JNBBottombar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jnblanchard@mac.com' => 'jnblanchard@mac.com' }
-  s.source           = { :git => 'https://github.com/jnblanchard@mac.com/JNBBottombar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/jnblanchard/JNBBottombar.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/JohnBlanchard1'
 
   s.ios.deployment_target = '8.0'
 
