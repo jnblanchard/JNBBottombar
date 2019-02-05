@@ -183,8 +183,8 @@ public class JNBBottombar: NSObject {
       topVC.view.addSubview(alertView!)
       let pgr = UIPanGestureRecognizer(target: self, action: #selector(handle(pan:)))
       alertView?.addGestureRecognizer(pgr)
-      alertView?.leadingAnchor.constraint(equalTo: topVC.view.leadingAnchor, constant: screenInsets.left).isActive = true
-      alertView?.trailingAnchor.constraint(equalTo: topVC.view.trailingAnchor, constant: screenInsets.right).isActive = true
+      alertView?.leadingAnchor.constraint(equalTo: topVC.view.safeAreaLayoutGuide.leadingAnchor, constant: (-1)*screenInsets.left).isActive = true
+      alertView?.trailingAnchor.constraint(equalTo: topVC.view.safeAreaLayoutGuide.trailingAnchor, constant: screenInsets.right).isActive = true
       alertView?.heightAnchor.constraint(equalToConstant: height).isActive = true
       alertView?.bottomAnchor.constraint(equalTo: bottomAnchor ?? topVC.view.safeAreaLayoutGuide.bottomAnchor, constant: screenInsets.bottom).isActive = true
       if let tempView = contentView {
