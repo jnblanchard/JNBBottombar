@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JNBBottombar'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Customizable bottom bar controller.'
   s.swift_version  = '4.2'
 
