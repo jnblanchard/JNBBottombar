@@ -35,8 +35,10 @@ JNBBottombar.shared.showWith(contentView: label,
                              borderColor: UIColor.white.cgColor,
                              forDuration: 2.5,
                              completion: nil)
+```
 
 If you do not specify a forDuration; the bar will show until hide or another call to show is made.
+```swift
 JNBSnackbar.shared.hide { (completed) in
   guard completed else { return }
   // bar has finished animating down
